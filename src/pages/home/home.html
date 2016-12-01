@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Counter Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding>Current Count: {{ counter | async }}</div>
+  <div padding>
+    <button ion-button (click)="increment()">Increment</button>
+  </div>
+  <div padding>
+    <button ion-button (click)="decrement()">Decrement</button>
+  </div>
+  <div padding>
+    <button ion-button (click)="reset()">Reset Counter</button>
+  </div>
+</ion-content>
